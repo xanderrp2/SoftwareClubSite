@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 255, 255, 0.5)),
+    url("../Assets/SchoolBuilding.png");
+    background-size: cover;
+    background-position: center;
+
+}
+.NavigationBar{
+    width: 85%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50;
+    margin-right: 50;
+    padding: 35px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.Logo{
+    cursor: pointer;
+}
+.NavigationBar ul button{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    background: transparent;
+    border: 0px;
+    
+    
+}
+.NavigationBar ul button a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    background: transparent;
+    overflow: none;
+    
+}
+.NavigationBar ul button::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(31, 134, 0);
+    position: absolute;
+    left: 0;
+    bottom: -5;
+    transition: 0.5s;
+}
+.NavigationBar ul button:hover:after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: rgb(31, 134, 0);
+    position: absolute;
+    left: 0;
+    bottom: -5;
+}
+
+.BaseBar {
+    content: "";
+    height: 8px;
+    width: 100%;
+    background: rgb(31, 134, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    font-family: "Bursh Script MT", cursive;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.Join button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+span{
+    background:rgba(0, 255, 255, 0.4);
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.Join button:hover span{
+    width: 100%;
+    transition: 0.5s;
+}
+.Join button:hover{
+    border: none;
+}

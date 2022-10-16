@@ -1,0 +1,62 @@
+.content{
+    /* Place your CSS Code Here or below*/
+    margin: auto;
+}
+
+/* Place your CSS Code Here or below*/
+
+
+
+.NavigationBar{
+    width: 101.5%;
+    margin-top: -8;
+    margin-bottom: auto;
+    margin-left: -8;
+    margin-right: 1;
+    padding: 0px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#000000, #19b31f);
+
+}
+.Logo{
+    cursor: pointer;
+}
+.NavigationBar ul button{
+    list-style: none;
+    display: inline-block;
+    margin: 0 0px;
+    position: relative;
+    background: transparent;
+    border: 0px;
+    
+    
+}
+.NavigationBar ul button a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    background: transparent;
+    overflow: none;
+    
+}
+.NavigationBar ul button::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(31, 134, 0);
+    position: absolute;
+    left: 0;
+    bottom: -5;
+    transition: 0.5s;
+}
+.NavigationBar ul button:hover:after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    bottom: -5;
+}
